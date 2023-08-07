@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Function to sum up Odd Number series
+sum_odd_numbers() {
+  sum=0
+  for ((i = 1; i <= $1; i += 2)); do
+    sum=$((sum + i))
+  done
+  echo "Sum: $sum"
+}

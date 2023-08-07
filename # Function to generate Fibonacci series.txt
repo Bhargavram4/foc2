@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Function to generate Fibonacci series 0, 1, 1, 2, 3, 5, 8, ... + n
+generate_fibonacci_series() {
+  a=0
+  b=1
+  echo -n "$a "
+  while [ $b -le $1 ]; do
+    echo -n "$b "
+    next=$((a + b))
+    a=$b
+    b=$next
+  done
+  echo ""
+}

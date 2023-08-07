@@ -1,0 +1,15 @@
+# Function to generate number series 1, 2, 3, 4, ... + n
+generate_numbers() {
+  for ((i = 1; i <= $1; i++)); do
+    echo -n "$i "
+  done
+  echo ""
+}
+
+# Function to generate even number series 2, 4, 6, ... + n
+generate_even_numbers() {
+  for ((i = 2; i <= $1; i += 2)); do
+    echo -n "$i "
+  done
+  echo ""
+}
